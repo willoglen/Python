@@ -7,4 +7,4 @@ This will validate against password complexity requirements - min-max-special ch
 
 -- Will also generate a random password if requested
 
--- 
+hacker news scrapes the website and returns news with > 100 votes
