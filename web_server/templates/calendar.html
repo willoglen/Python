@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />  
+        <link href="https://fonts.cdnfonts.com/css/poppins" rel="stylesheet">
+        <!-- Core theme CSS (includes Bootstrap)-->    
+        <link rel="stylesheet" href="static/css/style.css">
+        <link rel="stylesheet" href="static/css/calendar.css">
+       
+        
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+        <script src='static/js/fullcalendar.js' type="text/javascript"></script>
+
+        <script>
+
+            $(document).ready(function() {
+                var date = new Date();
+                var d = date.getDate();
+                var m = date.getMonth();
+                var y = date.getFullYear();
+        
+                /*  className colors
+        
+                className: default(transparent), important(red), chill(pink), success(green), info(blue)
+        
+                */
+        
+        
+                
+        
+        
+                /* initialize the calendar
+                -----------------------------------------------------------------*/
+        
+                var calendar =  $('#calendar').fullCalendar({
+                    header: {
+                        left: 'title',
+                        center: 'agendaDay,agendaWeek,month',
+                        right: 'prev,next today'
+                    },
+                    editable: true,
+                    firstDay: 1, //  1(Monday) this can be changed to 0(Sunday) for the USA system
+                    selectable: true,
+                    defaultView: 'month',
+        
+                    axisFormat: 'h:mm',
+                    columnFormat: {
+                        month: 'ddd',    // Mon
+                        week: 'ddd d', // Mon 7
+                        day: 'dddd M/d',  // Monday 9/7
+                        agendaDay: 'dddd d'
+                    },
+                    titleFormat: {
+                        month: 'MMMM yyyy', // September 2009
+                        week: "MMMM yyyy", // September 2009
+                        day: 'MMMM yyyy'                  // Tuesday, Sep 8, 2009
+                    },
+                    allDaySlot: false,
+                    selectHelper: true,
+                    select: function(start, end, allDay) {
+                        var title = prompt('Event Title:');
+                        if (title) {
+                            calendar.fullCalendar('renderEvent',
+                                {
+                                    title: title,
+                                    start: start,
+                                    end: end,
+                                    allDay: allDay
+                                },
+                                true // make the event "stick"
+                            );
+                        }
+                        calendar.fullCalendar('unselect');
+                    },
+                    droppable: true, // this allows things to be dropped onto the calendar !!!
+                    drop: function(date, allDay) { // this function is called when something is dropped
+        
+                        // retrieve the dropped element's stored Event Object
+                        var originalEventObject = $(this).data('eventObject');
+        
+                        // we need to copy it, so that multiple events don't have a reference to the same object
+                        var copiedEventObject = $.extend({}, originalEventObject);
+        
+                        // assign it the date that was reported
+                        copiedEventObject.start = date;
+                        copiedEventObject.allDay = allDay;
+        
+                        // render the event on the calendar
+                        // the last `true` argument determines if the event "sticks" (https://arshaw.com/fullcalendar/docs/event_rendering/renderEvent/)
+                        $('#calendar').fullCalendar('renderEvent', copiedEventObject, true);
+        
+                        // is the "remove after drop" checkbox checked?
+                        if ($('#drop-remove').is(':checked')) {
+                            // if so, remove the element from the "Draggable Events" list
+                            $(this).remove();
+                        }
+        
+                    },
+        
+                    events: [
+                       {{calendardata}}
+                    ],
+                });
+        
+        
+            });
+        
+        </script>
+        <title>Gethsemane-DeMolay Commandery Knights Templar #7</title> 
+         
+    </head>
+    <body>
+        <!-- Responsive navbar-->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container px-5">
+                <img src="static/img/kt-seal.png"  class="img-responsive"/>
+                <div class="container-fluid">
+                    <div class=row>
+                        <div><h3 class="text-light mb-5">Gethsemane DeMolay Commandery #7</h3></div></br>
+                        <div>
+                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 center">
+                                    <li class="nav-item"><a class="nav-link" aria-current="page" href="/">Home</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="/about">About</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="/contact">Contact</a></li>
+                                    <li class="nav-item"><a class="nav-link active" href="/calendar">Calendar</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="/officers">Officers</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <img src="static/img/kt-sword.png" class="img-responsive"/>
+        </nav>
+        <!-- Page Content-->
+        <div class="container-fluid backcolorright">   
+            <div class="col-md-8">&nbsp;</div>               
+            <div id='wrap'>
+            <div id='calendar'></div>
+            <div style='clear:both'></div>
+            </div>            
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
+    </body>
+</html>

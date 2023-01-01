@@ -1,0 +1,170 @@
+{
+  "data": [
+[
+  "Commander",
+  "Sebastian",
+  "Napolitano",
+  "ex-officio on all"
+],
+[
+  "Generalissimo",
+  "James",
+  "Stone Sr",
+  "preceptors"
+],
+[
+  "Captain-General",
+  "David",
+  "Querusio",
+  ""
+],
+[
+  "Treasurer",
+  "Peter",
+  "Mooradian",
+  "preceptors"
+],
+[
+  "Recorder",
+  "James",
+  "Martignoni",
+  "preceptors"
+],
+[
+  "Prelate",
+  "Glen",
+  "Cunningham",
+  "preceptors"
+],
+[
+  "Senior Warden",
+  "Kenneth",
+  "Brown",
+  ""
+],
+[
+  "Junior Warden",
+  "",
+  "",
+  ""
+],
+[
+  "Sword Bearer",
+  "Russell",
+  "Wolf",
+  ""
+],
+[
+  "Warder",
+  "Joseph",
+  "Wooters",
+  ""
+],
+[
+  "Standard Bearer",
+  "",
+  "",
+  ""
+],
+[
+  "Beausceant Bearer",
+  "",
+  "",
+  ""
+],
+[
+  "State Flag Bearer",
+  "",
+  "",
+  ""
+],
+[
+  "National Colors Bearer",
+  "",
+  "",
+  ""
+],
+[
+  "Color Gaurd",
+  "",
+  "",
+  ""
+],
+[
+  "Color Gaurd",
+  "",
+  "",
+  ""
+],
+[
+  "Troop",
+  "",
+  "",
+  "First Division"
+],
+[
+  "Troop",
+  "",
+  "",
+  "First Division"
+],
+[
+  "Troop",
+  "",
+  "",
+  "First Division"
+],
+[
+  "Troop",
+  "",
+  "",
+  "Third Division"
+],
+[
+  "Troop",
+  "",
+  "",
+  "Third Division"
+],
+[
+  "Troop",
+  "",
+  "",
+  "Third Division"
+],
+[
+  "Master of Ceremonies",
+  "",
+  "",
+  ""
+],
+[
+  "Master of Ceremonies",
+  "",
+  "",
+  ""
+],
+[
+  "Master of Ceremonies",
+  "",
+  "",
+  ""
+],
+[
+  "Trustee",
+  "",
+  "",
+  ""
+],
+[
+  "Trustee",
+  "",
+  "",
+  ""
+],
+[
+  "Trustee",
+  "",
+  "",
+  ""
+]]}
