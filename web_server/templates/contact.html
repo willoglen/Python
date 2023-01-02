@@ -23,10 +23,10 @@
                             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                                 <ul class="navbar-nav ms-auto mb-2 mb-lg-0 center">
                                     <li class="nav-item"><a class="nav-link" aria-current="page" href="/">Home</a></li>
-                                    <li class="nav-item"><a class="nav-link" href="/about">About</a></li>
-                                    <li class="nav-item"><a class="nav-link active" href="/contact">Contact</a></li>
-                                    <li class="nav-item"><a class="nav-link" href="/calendar">Calendar</a></li>
-                                    <li class="nav-item"><a class="nav-link" href="/officers">Officers</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="/about.html">About</a></li>
+                                    <li class="nav-item"><a class="nav-link active" href="/contact.html">Contact</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="/calendar.html">Calendar</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="/officers.html">Officers</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -50,29 +50,29 @@
                     Feel free to drop us a line below!
                     </span>
                     </div>
-                    <form class="contact100-form validate-form">
+                    <form class="contact100-form validate-form" action="/submit_contact_form" method="post">
                     <div class="wrap-input100 validate-input" data-validate="Name is required">
                     <span class="label-input100">Full Name:</span>
-                    <input class="input100" type="text" name="name" placeholder="Enter full name">
+                    <input class="input100 text-light" type="text" name="name" placeholder="Enter full name">
                     <span class="focus-input100"></span>
                     </div>
                     <div class="wrap-input100 validate-input" data-validate="Valid email is required: ex@abc.xyz">
                     <span class="label-input100">Email:</span>
-                    <input class="input100" type="text" name="email" placeholder="Enter email addess">
+                    <input class="input100 text-light" type="text" name="email" placeholder="Enter email addess">
                     <span class="focus-input100"></span>
                     </div>
                     <div class="wrap-input100 validate-input" data-validate="Phone is required">
                     <span class="label-input100">Phone:</span>
-                    <input class="input100" type="text" name="phone" placeholder="Enter phone number">
+                    <input class="input100 text-light" type="text" name="phone" placeholder="Enter phone number">
                     <span class="focus-input100"></span>
                     </div>
                     <div class="wrap-input100 validate-input" data-validate="Message is required">
                     <span class="label-input100">Message:</span>
-                    <textarea class="input100" name="message" placeholder="Your Messasge..."></textarea>
+                    <textarea class="input100 text-light" name="message" placeholder="Your Messasge..."></textarea>
                     <span class="focus-input100"></span>
                     </div>
                     <div class="container-contact100-form-btn">
-                    <button class="contact100-form-btn">
+                    <button class="contact100-form-btn" type="submit">
                     <span>
                     Submit
                     <i class="fa fa-long-arrow-right m-l-7" aria-hidden="true"></i>
