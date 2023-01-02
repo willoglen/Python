@@ -8,3 +8,10 @@ This will validate against password complexity requirements - min-max-special ch
 -- Will also generate a random password if requested
 
 hacker news scrapes the website and returns news with > 100 votes
+
+text send uses a service to send texts on demand
+ -- limited to one per day without a paid subscription
+ 
+ web server
+ -- web site to demonstrate various activities
+ -- 
