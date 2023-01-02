@@ -1,0 +1,55 @@
+[01/Jan/2023 19:58:52] ERROR [api_logger:49] Error at Error sending contact email to glen@willoglen.com
+Traceback (most recent call last):
+  File "/home/glen/Python/web_server/index.py", line 46, in send_contact_email
+    server.login(sender_email, password)
+  File "/home/glen/anaconda3/lib/python3.9/smtplib.py", line 750, in login
+    raise last_exception
+  File "/home/glen/anaconda3/lib/python3.9/smtplib.py", line 739, in login
+    (code, resp) = self.auth(
+  File "/home/glen/anaconda3/lib/python3.9/smtplib.py", line 662, in auth
+    raise SMTPAuthenticationError(code, resp)
+smtplib.SMTPAuthenticationError: (535, b'5.7.8 Username and Password not accepted. Learn more at\n5.7.8  https://support.google.com/mail/?p=BadCredentials c27-20020a05620a269b00b007054a238bf2sm2792430qkp.126 - gsmtp')
+[01/Jan/2023 20:04:52] ERROR [api_logger:49] Error at Error sending contact email to glen@willoglen.com
+Traceback (most recent call last):
+  File "/home/glen/Python/web_server/index.py", line 46, in send_contact_email
+    server.login(sender_email, password)
+  File "/home/glen/anaconda3/lib/python3.9/smtplib.py", line 750, in login
+    raise last_exception
+  File "/home/glen/anaconda3/lib/python3.9/smtplib.py", line 739, in login
+    (code, resp) = self.auth(
+  File "/home/glen/anaconda3/lib/python3.9/smtplib.py", line 662, in auth
+    raise SMTPAuthenticationError(code, resp)
+smtplib.SMTPAuthenticationError: (535, b'5.7.8 Username and Password not accepted. Learn more at\n5.7.8  https://support.google.com/mail/?p=BadCredentials p16-20020a05620a057000b006fa16fe93bbsm19114491qkp.15 - gsmtp')
+[01/Jan/2023 20:07:04] ERROR [api_logger:49] Error at Error sending contact email to glen@willoglen.com
+Traceback (most recent call last):
+  File "/home/glen/Python/web_server/index.py", line 46, in send_contact_email
+    server.login(sender_email, password)
+  File "/home/glen/anaconda3/lib/python3.9/smtplib.py", line 750, in login
+    raise last_exception
+  File "/home/glen/anaconda3/lib/python3.9/smtplib.py", line 739, in login
+    (code, resp) = self.auth(
+  File "/home/glen/anaconda3/lib/python3.9/smtplib.py", line 662, in auth
+    raise SMTPAuthenticationError(code, resp)
+smtplib.SMTPAuthenticationError: (535, b'5.7.8 Username and Password not accepted. Learn more at\n5.7.8  https://support.google.com/mail/?p=BadCredentials he9-20020a05622a600900b003a816011d51sm16876350qtb.38 - gsmtp')
+[01/Jan/2023 20:09:35] ERROR [api_logger:49] Error at Error sending contact email to glen@willoglen.com
+Traceback (most recent call last):
+  File "/home/glen/Python/web_server/index.py", line 46, in send_contact_email
+    server.login(sender_email, password)
+  File "/home/glen/anaconda3/lib/python3.9/smtplib.py", line 750, in login
+    raise last_exception
+  File "/home/glen/anaconda3/lib/python3.9/smtplib.py", line 739, in login
+    (code, resp) = self.auth(
+  File "/home/glen/anaconda3/lib/python3.9/smtplib.py", line 662, in auth
+    raise SMTPAuthenticationError(code, resp)
+smtplib.SMTPAuthenticationError: (535, b'5.7.8 Username and Password not accepted. Learn more at\n5.7.8  https://support.google.com/mail/?p=BadCredentials 133-20020a37088b000000b006bb2cd2f6d1sm19322926qki.127 - gsmtp')
+[01/Jan/2023 20:20:12] ERROR [api_logger:54] Error at Error sending contact email to glen@willoglen.com
+Traceback (most recent call last):
+  File "/home/glen/Python/web_server/index.py", line 50, in send_contact_email
+    server.login(sender_email, password)
+  File "/home/glen/anaconda3/lib/python3.9/smtplib.py", line 750, in login
+    raise last_exception
+  File "/home/glen/anaconda3/lib/python3.9/smtplib.py", line 739, in login
+    (code, resp) = self.auth(
+  File "/home/glen/anaconda3/lib/python3.9/smtplib.py", line 662, in auth
+    raise SMTPAuthenticationError(code, resp)
+smtplib.SMTPAuthenticationError: (535, b'5.7.8 Username and Password not accepted. Learn more at\n5.7.8  https://support.google.com/mail/?p=BadCredentials b5-20020a05620a04e500b006fab416015csm19467797qkh.25 - gsmtp')
